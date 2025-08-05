@@ -1,7 +1,7 @@
 name: Check fortune cookie output
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:   //手動觸發workflow
   push:
     branches: [ main ]
 
