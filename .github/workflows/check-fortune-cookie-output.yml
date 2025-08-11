@@ -15,7 +15,7 @@ jobs:
     environment: DEV
     
     steps:
-      - name: print dev version
+      - name: print dev version and secret infomation
         run: |
             echo "DEV environment version: ${{vars.VERSION}}"
             echo "DEV API KEY is ${{ secrets.API_KEY }}"
@@ -24,7 +24,7 @@ jobs:
     environment: RC
     
     steps:
-      - name: print rc version
+      - name: print rc version and secret infomation
         run: |
             echo "RC environment version: ${{vars.VERSION}}" 
             echo "RC API KEY is ${{ secrets.API_KEY }}"
