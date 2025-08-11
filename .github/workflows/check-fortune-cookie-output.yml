@@ -18,6 +18,7 @@ jobs:
       - name: print dev version
         run: |
             echo "DEV environment version: ${{vars.VERSION}}"
+            echo "DEV API KEY is ${{ secrets.API_KEY }}"
   rc:
     runs-on: ubuntu-latest
     environment: RC
@@ -25,7 +26,8 @@ jobs:
     steps:
       - name: print rc version
         run: |
-            echo "RC environment version: ${{vars.VERSION}}"       
+            echo "RC environment version: ${{vars.VERSION}}" 
+            echo "RC API KEY is ${{ secrets.API_KEY }}"
     
   check_output:
     runs-on: ubuntu-latest
@@ -88,4 +90,4 @@ jobs:
 
       - name: Print Secret value
         run: |
-            echo "the secret is ${{ secrets.PASS_WORD }}
+            echo "the secret is ${{ secrets.PASS_WORD }}"
