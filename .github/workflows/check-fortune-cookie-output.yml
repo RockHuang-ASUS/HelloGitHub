@@ -80,4 +80,4 @@ jobs:
       
       - name: Print value PRODUCT_NAME
         run: |
-            echo "Pring product name ${{ vars.PRODUCT_NAME }}
+            echo "Pring product name ${{ vars.PRODUCT_NAME }}"
