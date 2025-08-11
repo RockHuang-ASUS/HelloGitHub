@@ -77,3 +77,7 @@ jobs:
           script: |
             console.log("Triggered by:", context.actor);
             console.log("Event name:", context.eventName);
+      
+      - name: Print value PRODUCT_NAME
+        run: |
+            echo "Pring product name ${{ var.PRODUCT_NAME }}
