@@ -85,3 +85,7 @@ jobs:
       - name: Print value PRODUCT_NAME
         run: |
             echo "Pring product name ${{ vars.PRODUCT_NAME }}"
+
+      - name: Print Secret value
+        run: |
+            echo "the secret is ${{ secrets.PASS_WORD }}
