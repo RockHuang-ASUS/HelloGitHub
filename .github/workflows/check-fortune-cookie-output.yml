@@ -6,6 +6,23 @@ on:
     branches: [ main ]
 
 jobs:
+  dev:
+    runs-on: ubuntu-latest
+    environment: DEV
+    
+    steps:
+      - name: print dev version
+        run: |
+            echo "DEV environment version: ${{var.VERSION}}"
+  rc:
+    runs-on: ubuntu-latest
+    environment: RC
+    
+    steps:
+      - name: print dev version
+        run: |
+            echo "RC environment version: ${{var.VERSION}}"       
+    
   check_output:
     runs-on: ubuntu-latest
 
