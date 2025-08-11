@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: print dev version
         run: |
-            echo "DEV environment version: ${{var.VERSION}}"
+            echo "DEV environment version: ${{env.VERSION}}"
   rc:
     runs-on: ubuntu-latest
     environment: RC
@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: print dev version
         run: |
-            echo "RC environment version: ${{var.VERSION}}"       
+            echo "RC environment version: ${{env.VERSION}}"       
     
   check_output:
     runs-on: ubuntu-latest
